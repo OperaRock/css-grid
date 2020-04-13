@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="005-As-many-as-will-fit-with-some-items-spanning-two-rows.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header">
+        <h2>As many as will fit with some items spanning two rows</h2>
+        <p>
+            Este exemplo mostra um padrão de duas colunas, com cabeçalho e rodapé. O painel central contém um número de caixas. Queremos ter o maior número possível em cada linha, com as caixas alinhadas como linhas e colunas.
+        </p>
+        <p>
+            Alguns de nossos itens abrangem duas linhas.
+        </p>
+        <p>
+            Essa técnica significa que não precisamos usar consultas de mídia, pois uma grade de layout flexível faz o trabalho para nós.
+        </p>
+        <p>
+            O fallback usa o Flexbox, precisamos restringir os itens no layout flex para obter a aparência do alinhamento bidimensional. Não temos os itens altos no layout flexível.
+        </p>
+        <p>
+            Estou usando <code>minmax</code> em dois lugares na minha definição de grade. Para criar a lista de colunas de faixas com no mínimo 200 pixels e no máximo 1fr. Além disso, ao definir linhas, quero que minhas linhas tenham no mínimo 100 pixels de altura, mas se expandam para a altura do que for colocado nelas. Portanto, as linhas têm um máximo de automático.
+        </p>
+        <p>
+            <h3>Técnicas usadas para criar esse layout</h3>
+            <ul>
+                <li>Defining a grid</li>
+                <li>The fr unit</li>
+                <li>Feature Queries</li>
+            </ul>
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <header class="header">My header</header>
+
+        <div class="panel">Panel A</div>
+        <div class="panel">Panel B</div>
+        <div class="panel tall-panel">Panel C</div>
+        <div class="panel">Panel D</div>
+        <div class="panel">Panel E</div>
+        <div class="panel">Panel F</div>
+        <div class="panel tall-panel">Panel G</div>
+        <div class="panel tall-panel">Panel H</div>
+        <div class="panel">Panel I</div>
+        <div class="panel">Panel J</div>
+
+        <footer class="footer">My footer</footer>
+    </div>
+
+</body>
+
+</html>

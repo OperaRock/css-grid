@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="019-Grid-auto-placement-mixed-with-placed-items.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>Grid auto-placement mixed with placed items</h2>
+        <p>
+            Se um elemento filho tiver sido colocado, o algoritmo de posicionamento automático o colocará primeiro e depois descobrirá o que fazer com qualquer elemento filho que não tenha sido colocado.
+        </p>
+        <p>
+            Neste exemplo, coloquei box2 na grade e também a fiz estender 3 linhas de grade. O restante das caixas continuam dispostas como antes.
+        </p>
+
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+
+</body>
+
+</html>

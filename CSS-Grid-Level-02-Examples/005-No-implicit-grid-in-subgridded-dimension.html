@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="005-No-implicit-grid-in-subgridded-dimension.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>No implicit grid in subgridded dimension</h2>
+        <p>
+            A dimensão ou dimensões da sub-grade não têm grade implícita, isso significa que, se você colocar automaticamente muitos itens nessa sub-grade ou posicionar um item fora da sub-grade, ele será tratado
+            usando as mesmas regras para fixar grades muito grandes. Isso significa que, no nosso exemplo, os itens adicionais são forçados para a última linha da grade.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+            <div class="box g">G</div>
+            <div class="box h">H</div>
+            <div class="box i">I</div>
+            <div class="box j">J</div>
+            <div class="box k">K</div>
+            <div class="box l">L</div>
+            <div class="box m">M</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

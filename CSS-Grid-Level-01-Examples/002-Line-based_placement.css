@@ -1,0 +1,81 @@
+body {
+    margin: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+/* Configuração dos elementos de A a F no GRID CSS */
+
+.a {
+    /* Coluna */
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* Linha */
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.b {
+    /* Coluna */
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    /* Linha */
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.c {
+    /* Coluna */
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    /* Linha */
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.d {
+    /* Coluna */
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    /* Linha */
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.e {
+    /* Coluna */
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    /* Linha */
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.f {
+    /* Coluna */
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+    /* Linha */
+    grid-row-start: 1;
+    grid-row-end: 2;
+}

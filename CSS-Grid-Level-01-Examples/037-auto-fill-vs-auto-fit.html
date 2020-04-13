@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="037-auto-fill-vs-auto-fit.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>auto-fill vs. auto-fit</h2>
+        <p>
+            Demonstrando a diferença entre as palavras-chave de preenchimento automático e ajuste automático. Você precisará do Chrome 55 ou Firefox com o Grid ativado para ver a diferença.
+        </p>
+        <p>
+            No primeiro exemplo, usamos a palavra-chave de preenchimento automático para repetir. Obtemos o número máximo de faixas com um mínimo de 200 pixels e um máximo de 1fr que cabem no contêiner.
+        </p>
+        <p>
+            No segundo exemplo, usamos a palavra-chave de <code>auto-fit</code> para repetir. Obtemos o número máximo de faixas com um mínimo de 200 pixels e um máximo de 1fr que cabem no contêiner.
+        </p>
+        <p>
+            Após o posicionamento automático, todas as faixas vazias são reduzidas a 0. Portanto, nossos itens podem ser expandidos para ocupar o espaço restante.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <div class="wrapper2">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+
+</html>

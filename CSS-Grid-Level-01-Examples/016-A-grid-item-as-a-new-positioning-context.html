@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="016-A-grid-item-as-a-new-positioning-context.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>A grid item as a new positioning context</h2>
+        <p>
+            Você pode posicionar itens absolutamente dentro de uma área da Grade. Neste exemplo, usei position: relativo na minha área de grade .content. Posso então posicionar as quatro imagens de seta usando o posicionamento absoluto dentro dessa área, e funciona como você esperaria.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content">Content
+            <br /> The four arrows are inline images inside the content area.
+            <img src="http://gridbyexample.com/examples/code/arrow-top-left.png" alt="top left" class="topleft" />
+            <img src="http://gridbyexample.com/examples/code/arrow-top-right.png" alt="top right" class="topright" />
+            <img src="http://gridbyexample.com/examples/code/arrow-bottom-left.png" alt="bottom left" class="bottomleft" />
+            <img src="http://gridbyexample.com/examples/code/arrow-bottom-right.png" alt="bottom right" class="bottomright" /></div>
+        <div class="box footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

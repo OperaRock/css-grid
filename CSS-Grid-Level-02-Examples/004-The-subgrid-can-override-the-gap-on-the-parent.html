@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="004-The-subgrid-can-override-the-gap-on-the-parent.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>The subgrid can override the gap on the parent</h2>
+        <p>
+            A subgrelha herda o gutter(gap) definido na grade pai por padrão. No entanto, você pode atribuir a um item
+            de sub-grade diferentes gutters(gaps), <code>row-gap(espaço de linha)</code> ou <code>column-gap(espaço de coluna)</code>. Neste
+            exemplo, o pai tem um intervalo de 10 px definido, a subgrelha tem um <code>row-gap(espaço de linhas)</code> definido como 0.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+            <div class="box g">G</div>
+            <div class="box h">H</div>
+            <div class="box i">I</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    margin: 40px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.header {
+    grid-area: header;
+}
+
+.wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-areas: 
+        "... header header"
+        "sidebar content content";
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.header {
+    background-color: #999;
+}

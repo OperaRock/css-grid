@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="015-Layering-items.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>Layering items</h2>
+        <p>
+            Você pode colocar em camadas itens na Grade, usando o z-index para controlar a ordem que eles empilham. Neste exemplo, tenho caixas organizadas em uma grade, minha caixa F é a última na ordem de origem e posicionada na grade, de modo que parcialmente se sobrepõe à caixa D.
+        </p>
+        <p>
+            Sem nenhuma propriedade de z-index, ele será exibido na parte superior da caixa D. No entanto, posso adicionar um z-index e controlar a posição que funciona como você esperaria se você tivesse usado a propriedade z-index com elementos posicionados.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+    </div>
+</body>
+
+</html>

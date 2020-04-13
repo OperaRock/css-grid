@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="010-Explicit-and-Implicit-Grid.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header">
+        <h2>Explicit and Implicit Grid</h2>
+        <p>
+            Quando usamos colunas <code>grid-template-columns</code> e <code>grid-template-rows</code>, criamos uma <strong>Grade Explícita</strong>. No entanto, se tentarmos colocar um item fora dessa grade, o navegador criará uma linha ou linhas de <strong>Grade Implícita</strong> para reter esse item.
+        </p>
+        <p>
+            Nesse exemplo, coloquei entre as linhas 4 e 5 da coluna da grade, elas não são descritas com <code>grid-template-rows</code> portanto, é criada uma linha de grade implícita 5.
+        </p>
+        <p>
+            Por padrão, as faixas implícitas da grade criadas pelas linhas implícitas serão dimensionadas automaticamente. No entanto, você pode dimensionar as faixas com as propriedades grid-auto-columns e
+            grid-auto-lines. Eu dimensionei minhas trilhas automáticas como 100px para coincidir com o restante das trilhas de coluna na minha grade.
+        </p>
+    </header>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+    </div>
+</body>
+
+</html>

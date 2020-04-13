@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="008-Line-based_placement-named-lines-with-spans.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header">
+        <h2>Line-based placement named lines with spans</h2>
+        <p>
+            Você pode dar às linhas o mesmo nome e, em seguida, usar a palavra-chave span para direcionar as linhas de um determinado nome. Isso é realmente útil se você deseja criar uma grade complexa com várias faixas e gutters(gap) de conteúdo.
+        </p>
+        <p>
+            Criei uma grade um pouco maior aqui e nomeei todas as linhas de grade antes do conteúdo acompanhar com <code>col</code> e
+            todas as linhas antes da linha acompanhar com <code>row</code>. Posso começar em uma determinada linha de coluna usando
+            <code>col &lt;número da linha&gt;</code> e estender dizendo estender <code>span &lt;número de linhas&gt;</code>.
+        </p>
+    </header>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+    </div>
+</body>
+
+</html>

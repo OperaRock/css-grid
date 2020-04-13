@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="011-Defining-Grid-Areas.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>Defining Grid Areas</h2>
+        <p>
+           Podemos criar áreas nomeadas na grade para inserir conteúdo. Para fazer isso, primeiro atribuímos elementos em nossa marcação a uma Grid Area, usando a propriedade <code>grid-area-property</code>.
+        </p>
+        <p>
+            Podemos então usar a propriedade <code>grid-template-areas</code> para descrever onde esses elementos devem estar na grade.
+        </p>
+        <p>
+            Repetir o nome de uma área indica que a área abrange a trilha da grade. Usando um '.' ou uma sequência como '....' indica uma faixa vazia. Como a primeira célula nesta grade.
+        </p>
+    </header>
+    <div class="wrapper">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content">Content</div>
+    </div>
+
+</body>
+
+</html>

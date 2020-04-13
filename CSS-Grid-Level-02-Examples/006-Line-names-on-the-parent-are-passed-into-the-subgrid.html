@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="006-Line-names-on-the-parent-are-passed-into-the-subgrid.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>Line names on the parent are passed into the subgrid</h2>
+        <p>
+            Se você definir nomes de linhas em sua grade principal, essas linhas serão passadas para o item subgrelhado.
+            Isso significa que você pode posicionar netos usando os nomes das linhas de grade definidas na grade pai.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+            <div class="box g">G</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

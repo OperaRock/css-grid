@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="036-Percentage-based-grids-and-gaps.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>Percentage based grids and gaps</h2>
+        <p>
+            Uma grade com uma largura de 90%. Seis faixas de coluna de 10% cada, 5 faixas de calha de 2% cada.
+        </p>
+        <p>
+            A propriedade gap da grade controla colunas e linhas, mas como a grade não tem altura, o gap da linha é resolvido como 0.
+        </p>
+        <p>
+            Se dermos uma altura à grade, há algo em que 2% deve ser uma porcentagem. Então temos uma lacuna.
+        </p>
+    </header>
+    <hr>
+    <p><em>Para ver a diferença, você precisa do Chrome 55 ou Firefox.</em></p>
+
+    <p>
+        Uma grade com uma largura de 90%. Seis faixas de coluna de 10% cada, 5 faixas com gutter de 2% cada.
+    </p>
+
+    <p>
+        A propriedade gap da grade controla colunas e linhas, mas como a grade não tem altura, o
+        <a href="https://github.com/w3c/csswg-drafts/issues/345#issuecomment-240333816" target="_blank">gap de linhas resolve para 0</a>.
+    </p>
+
+    <div class="wrapper">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+
+    <p>
+        Se dermos uma altura à grade, há algo em que 2% deve ser uma porcentagem. Então temos uma lacuna.
+    </p>
+
+    <div class="wrapper with-height">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="023-Using-Order.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header">
+        <h2>Using Order</h2>
+        <p>
+            Grid suporta a propriedade <code>order</code> também encontrada no Flexbox. Se você estiver posicionando explicitamente Itens da Grade, a propriedade <code>order</code> afetará a ordem da pintura e, portanto, a ordem na qual os itens se acumulam onde nenhum índice z foi aplicado.
+        </p>
+        <p>
+            Se estiver usando o posicionamento automático, a propriedade do pedido afetará como os itens são colocados na grade. Neste exemplo, todas as caixas receberam uma ordem de 1 e, portanto, continuam sendo posicionadas na ordem DOM. No entanto, a caixa1 tem uma ordem de 3 e a caixa2, uma ordem de 2. Essas caixas têm um valor de ordem mais alto, portanto, são posicionadas após todas as caixas com um valor de ordem 1.
+        </p>
+    </header>
+    <hr>
+    <div class="wrapper">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+        <div class="box box7">7</div>
+        <div class="box box8">8</div>
+        <div class="box box9">9</div>
+        <div class="box box10">10</div>
+        <div class="box box11">11</div>
+        <div class="box box12">12</div>
+    </div>
+
+</body>
+
+</html>

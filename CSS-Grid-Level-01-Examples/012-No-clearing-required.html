@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="012-No-clearing-required.css">
+    <link rel="icon" type="image/png" href="../img/favicon.png" sizes="36x36">
+</head>
+
+<body>
+    <header class="header-page">
+        <h2>No clearing required</h2>
+        <p>
+            Se eu adicionar um rodapé à minha marcação e definir uma <code>grid-area</code> e colocá-la na grade usando <code>grid-template-areas</code>, você poderá ver que ele fica abaixo da coluna de conteúdo. Não há limpeza necessária, pois esse rodapé tem uma trilha na grade, não pode subir em outra trilha.
+        </p>
+        <p>
+            Este exemplo também mostra o problema descrito no exemplo 5; por padrão, o plano de fundo na barra lateral deve esticar até a altura máxima, de maneira semelhante aos padrões do Flexbox.
+        </p>
+    </header>
+    <div class="wrapper">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box content">Content
+            <br /> More content than we had before so this column is now quite tall.</div>
+        <div class="box footer">Footer</div>
+    </div>
+
+</body>
+
+</html>
